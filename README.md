@@ -11,7 +11,7 @@ This is the script for Edi Wang to setup a new dev box. You can modify the scrip
 
 ## How to Use
 
-Download latest script here: https://go.edi.wang/aka/envsetup
+Download this repository
 
 ### Optional
 
