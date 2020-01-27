@@ -92,7 +92,6 @@ else {
 Write-Host ""
 Write-Host "Installing Applications..." -ForegroundColor Green
 Write-Host "------------------------------------" -ForegroundColor Green
-Write-Host "[WARN] Ma de in China: some software like Google Chrome require the true Internet first" -ForegroundColor Yellow
 
 if (Check-Command -cmdname 'git') {
     Write-Host "Git is already installed, checking new version..."
@@ -115,17 +114,55 @@ else {
 }
 
 choco install 7zip.install -y
+
+choco install microsoft-edge -y
 choco install googlechrome -y
-choco install potplayer -y
+choco install firefox -y
+
 choco install dotnetcore-sdk -y
+choco install visualstudio2019enterprise -y  --package-parameters "--allWorkloads --includeRecommended --includeOptional --passive --locale en-US"
+choco install vscode -y
+
+if (Check-Command -cmdname 'code') {
+    Write-Host "Installing VSCode extensions..."
+    $vscodeExtensions = @(
+    "abusaidm.html-snippets",
+    "alexiv.vscode-angular2-files",
+    "Angular.ng-template",
+    "christian-kohler.path-intellisense",
+    "CoenraadS.bracket-pair-colorizer",
+    "eamodio.gitlens",
+    "eg2.tslint",
+    "Equinusocio.vsc-community-material-theme",
+    "Equinusocio.vsc-material-theme",
+    "equinusocio.vsc-material-theme-icons",
+    "esbenp.prettier-vscode",
+    "jchannon.csharpextensions",
+    "jmrog.vscode-nuget-package-manager",
+    "johnpapa.Angular2",
+    "Mikael.Angular-BeastCode",
+    "ms-azuretools.vscode-docker",
+    "ms-kubernetes-tools.vscode-kubernetes-tools",
+    "ms-vscode.csharp",
+    "ms-vscode.powershell",
+    "vscode-icons-team.vscode-icons",
+    "msjsdiag.debugger-for-chrome",
+    "PKief.material-icon-theme",
+    "rbbit.typescript-hero",
+    "redhat.vscode-yaml",
+    "shaharkazaz.git-merger",
+    "SirTori.indenticator")
+    
+    foreach ($ext in $vscodeExtensions) {
+        code --install-extension $ext
+    }
+}
+
+choco choco install office365proplus -y --params '/Language:pt-pt'
+
 choco install ffmpeg -y
 choco install wget -y
 choco install openssl.light -y
-choco install vscode -y
-choco install vscode-csharp -y
-choco install vscode-icons -y
-choco install vscode-mssql -y
-choco install vscode-powershell -y
 choco install sysinternals -y
 choco install notepadplusplus.install -y
 choco install dotpeek -y
@@ -137,6 +174,21 @@ choco install lightshot.install -y
 choco install microsoft-teams.install -y
 choco install teamviewer -y
 choco install github-desktop -y
+choco install slack -y
+choco install bitwarden -y
+choco install putty -y
+choco install spotify -y
+choco install sql-server-management-studio -y
+choco install forticlientvpn -y
+choco install postman -y
+choco install redis -y
+choco install rabbitmq -y
+choco install docker-cli -y
+choco install mongodb.install -y
+choco install redis -y
+choco install postgresql10 -y
+choco install pgadmin4 -y
+
 
 Write-Host "------------------------------------" -ForegroundColor Green
 Read-Host -Prompt "Setup is done, restart is needed, press [ENTER] to restart computer."
