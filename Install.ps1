@@ -118,6 +118,8 @@ choco install dotnetcore-sdk -y
 choco install visualstudio2019enterprise -y  --package-parameters "--allWorkloads --includeRecommended --includeOptional --passive --locale en-US"
 choco install vscode -y
 
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+
 if (Check-Command -cmdname 'code') {
     Write-Host "Installing VSCode extensions..."
     $vscodeExtensions = @(
@@ -152,12 +154,12 @@ if (Check-Command -cmdname 'code') {
     }
 }
 
-choco install office365proplus -y --params '/Language:pt-pt'
+choco install office365proplus -y --params '/Language:us-us'
 
 choco install ffmpeg -y
 choco install wget -y
 choco install openssl.light -y
-choco install sysinternals -y
+choco install sysinternals --params "/InstallDir:C:\Sysinternals" -y
 choco install notepadplusplus.install -y
 choco install dotpeek -y
 choco install linqpad -y
@@ -180,9 +182,11 @@ choco install rabbitmq -y
 choco install docker-cli -y
 choco install mongodb.install -y
 choco install redis -y
-choco install postgresql10 -y
-choco install pgadmin4 -y
 
+$pgPassword = Read-Host -AsSecureString 'Enter a Postgres password'
+choco install postgresql12 -y --params '/Password:$pgPassword'
+
+choco install pgadmin4 -y
 
 Write-Host "------------------------------------" -ForegroundColor Green
 Read-Host -Prompt "Setup is done, restart is needed, press [ENTER] to restart computer."
