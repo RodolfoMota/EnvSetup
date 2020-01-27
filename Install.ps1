@@ -152,7 +152,7 @@ if (Check-Command -cmdname 'code') {
     }
 }
 
-choco choco install office365proplus -y --params '/Language:pt-pt'
+choco install office365proplus -y --params '/Language:pt-pt'
 
 choco install ffmpeg -y
 choco install wget -y
