@@ -1,6 +1,6 @@
 # Windows 10 Developer Machine Setup
 
-This is the script for Edi Wang to setup a new dev box. You can modify the scripts to fit your own requirements.
+This is the script for Luís Dias (forked from https://github.com/EdiWang/EnvSetup) to setup a new dev box. You can modify the scripts to fit your own requirements.
 
 ## Prerequisites
 
