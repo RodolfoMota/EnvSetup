@@ -34,8 +34,11 @@ Import "Add_PS1_Run_as_administrator.reg" to your registry to enable context men
   - WebSockets
 - Install Chocolate for Windows
     - 7-Zip
+    - Microsoft Edge Chromium-Based
     - Google Chrome
-    - Pot Player
+    - Firefox
+    - .NET Core 3.1 SDK
+    - Visual Studio 2019 Enterprise
     - Microsoft Teams
     - SysInternals
     - Lightshot
@@ -44,9 +47,30 @@ Import "Add_PS1_Run_as_administrator.reg" to your registry to enable context men
     - Notepad++
     - Visual Studio Code
         - C-Sharp
+        - C# Extensions
         - Icons
-        - MSSQL
+        - Angular 8 Snippets
+        - Angular Files
+        - Angular Language Service
+        - Angular Snippets (Version 8)
+        - Bracket Pair Colorizer
+        - Community Material Theme
+        - Debugger for Chrome
+        - Docker
+        - Git Merger
+        - GitLens — Git supercharged
+        - HTML Snippets
+        - Indenticator
+        - Kubernetes
+        - Material Icon Theme
+        - Material Theme
+        - Material Theme Icons
+        - NuGet Package Manager
+        - Path Intellisense
         - PowerShell
+        - Prettier - Code formatter
+        - TypeScript Hero
+        - YAML
     - DotPeek
     - LINQPad
     - Fiddler
@@ -58,6 +82,20 @@ Import "Add_PS1_Run_as_administrator.reg" to your registry to enable context men
     - OpenSSL
     - Beyond Compare
     - Node.Js
+    - Slack
+    - Bitwarden
+    - Putty
+    - Spotify
+    - SQL Server Management Studio
+    - FortiClient VPN
+    - Postman
+    - Redis
+    - RabbitMQ
+    - Docker
+    - MongoDB
+    - Redis
+    - Postgres
+    - PgAdmin
 - Remove a few pre-installed UWP applications
     - Messaging
     - CandyCrush
