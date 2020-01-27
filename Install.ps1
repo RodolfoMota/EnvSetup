@@ -42,8 +42,8 @@ $uwpRubbishApps = @(
     "Microsoft.Messaging",
     "Microsoft.People",
     "Microsoft.WindowsFeedbackHub",
-    "Microsoft.YourPhone",
-    "Microsoft.MicrosoftOfficeHub")
+    "Microsoft.YourPhone"
+    )
 
 foreach ($uwp in $uwpRubbishApps) {
     Get-AppxPackage -Name $uwp | Remove-AppxPackage
