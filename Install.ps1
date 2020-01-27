@@ -109,7 +109,7 @@ else {
 }
 
 choco install 7zip.install -y
-
+choco install curl -y
 choco install microsoft-edge -y
 choco install googlechrome -y
 choco install firefox -y
