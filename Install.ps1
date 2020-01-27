@@ -132,7 +132,6 @@ if (Check-Command -cmdname 'code') {
     "christian-kohler.path-intellisense",
     "CoenraadS.bracket-pair-colorizer",
     "eamodio.gitlens",
-    "eg2.tslint",
     "Equinusocio.vsc-community-material-theme",
     "Equinusocio.vsc-material-theme",
     "equinusocio.vsc-material-theme-icons",
