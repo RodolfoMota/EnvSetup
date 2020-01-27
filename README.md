@@ -4,8 +4,7 @@ This is the script for Edi Wang to setup a new dev box. You can modify the scrip
 
 ## Prerequisites
 
-- A clean install of Windows 10 Pro v1903 en-us.
-- If you are in China: a stable "Internet" connection.
+- A clean install of Windows 10 Enterprise v1909 en-us.
 
 > This script has not been tested on other version of Windows, please be careful if you are using it on other Windows versions.
 
