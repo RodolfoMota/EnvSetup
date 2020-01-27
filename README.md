@@ -70,6 +70,7 @@ Import "Add_PS1_Run_as_administrator.reg" to your registry to enable context men
         - Prettier - Code formatter
         - TypeScript Hero
         - YAML
+    - Office 365
     - DotPeek
     - LINQPad
     - Fiddler
