@@ -179,6 +179,7 @@ choco install forticlientvpn -y
 choco install postman -y
 choco install redis -y
 choco install rabbitmq -y
+choco install activemq -y
 choco install docker-cli -y
 choco install mongodb.install -y
 choco install redis -y
