@@ -171,6 +171,7 @@ choco install microsoft-teams.install -y
 choco install teamviewer -y
 choco install github-desktop -y
 choco install slack -y
+choco install microsoft-teams -y
 choco install bitwarden -y
 choco install putty -y
 choco install spotify -y
