@@ -1,6 +1,6 @@
 # Windows 10 Developer Machine Setup
 
-This is the script for Luís Dias (forked from https://github.com/EdiWang/EnvSetup) to setup a new dev box. You can modify the scripts to fit your own requirements.
+This is the script for Rodolfo Mota (forked from https://github.com/EdiWang/EnvSetup) to setup a new dev box. You can modify the scripts to fit your own requirements.
 
 ## Prerequisites
 
@@ -38,9 +38,8 @@ Import "Add_PS1_Run_as_administrator.reg" to your registry to enable context men
     - Firefox
     - .NET Core 3.1 SDK
     - Visual Studio 2019 Enterprise
+    - Visual Studio 2017 Enterprise
     - Microsoft Teams
-    - SysInternals
-    - Lightshot
     - FileZilla
     - TeamViewer
     - Notepad++
@@ -71,29 +70,17 @@ Import "Add_PS1_Run_as_administrator.reg" to your registry to enable context men
         - TypeScript Hero
         - YAML
     - Office 365
-    - DotPeek
-    - LINQPad
-    - Fiddler
     - Git
     - GitHub for Windows
-    - FFMpeg
-    - CURL
-    - WGet
-    - OpenSSL
     - Beyond Compare
     - Node.Js
     - Slack
-    - Bitwarden
     - Putty
     - Spotify
     - SQL Server Management Studio
     - FortiClient VPN
     - Postman
-    - Redis
-    - RabbitMQ
-    - Docker
     - MongoDB
-    - Redis
     - Postgres
     - PgAdmin
 - Remove a few pre-installed UWP applications
