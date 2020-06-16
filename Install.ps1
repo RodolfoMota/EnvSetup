@@ -5,10 +5,6 @@ function Check-Command($cmdname) {
 }
 
 # -----------------------------------------------------------------------------
-$computerName = Read-Host 'Enter New Computer Name'
-Write-Host "Renaming this computer to: " $computerName  -ForegroundColor Yellow
-Rename-Computer -NewName $computerName
-# -----------------------------------------------------------------------------
 Write-Host ""
 Write-Host "Disable Sleep on AC Power..." -ForegroundColor Green
 Write-Host "------------------------------------" -ForegroundColor Green
@@ -109,13 +105,13 @@ else {
 }
 
 choco install 7zip.install -y
-choco install curl -y
 choco install microsoft-edge -y
 choco install googlechrome -y
 choco install firefox -y
-
 choco install dotnetcore-sdk -y
+choco install visualstudio2017enterprise -y  --package-parameters "--allWorkloads --includeRecommended --includeOptional --passive --locale en-US"
 choco install visualstudio2019enterprise -y  --package-parameters "--allWorkloads --includeRecommended --includeOptional --passive --locale en-US"
+choco install 7zip.install -y
 choco install vscode -y
 
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
@@ -155,39 +151,26 @@ if (Check-Command -cmdname 'code') {
 }
 
 choco install office365proplus -y --params '/Language:us-us'
-
-choco install ffmpeg -y
-choco install wget -y
-choco install openssl.light -y
 choco install sysinternals --params "/InstallDir:C:\Sysinternals" -y
 choco install notepadplusplus.install -y
-choco install dotpeek -y
-choco install linqpad -y
-choco install fiddler -y
 choco install beyondcompare -y
-choco install filezilla -y
-choco install lightshot.install -y
-choco install microsoft-teams.install -y
 choco install teamviewer -y
 choco install github-desktop -y
 choco install slack -y
-choco install microsoft-teams -y
-choco install bitwarden -y
 choco install putty -y
 choco install spotify -y
-choco install sql-server-management-studio -y
+choco install ssms -y
 choco install forticlientvpn -y
 choco install postman -y
-choco install redis -y
-choco install rabbitmq -y
 choco install activemq -y
-choco install docker-cli -y
 choco install mongodb.install -y
-choco install redis -y
+choco install paint.net -y
+choco install keepass.install -y
+choco install mremoteng -y
+choco install discord -y
 
 $pgPassword = Read-Host -AsSecureString 'Enter a Postgres password'
 choco install postgresql12 -y --params '/Password:$pgPassword'
-
 choco install pgadmin4 -y
 
 Write-Host "------------------------------------" -ForegroundColor Green
